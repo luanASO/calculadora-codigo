@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'poppins', Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adiciona a imagem do fundo do site */
+body {
+    background-image: url(/java\ wall.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Troca a cor do elemento span dentro da tag H1 */
+span.red {
+    color: #F8981D;
+}
+
+/* Adiciona uma altura, e posiciona o elemento ao centro */
+header.header {
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+}
+
+/* Adiciona uma altura e posiciona o elemento ao centro */
+main.main {
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adiciona uma altura, uma borda arrendodada, um fundo azul com a cor do texto branca, e um box shadow */
+.calculadora-container {
+    width: 40%;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 10px;
+    background-color: #12192ca1;
+    color: #fff;
+
+    -webkit-box-shadow: 8px 7px 22px 3px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 8px 7px 22px 3px rgba(0, 0, 0, 0.77);
+    box-shadow: 8px 7px 22px 3px rgba(0, 0, 0, 0.77);
+}
+
+/* Uma cor branca para o elemento h1 */
+.calculadora-container h1 {
+    margin-top: 30px;
+    color: #F1F1F1;
+}
+
+/* Um padding para a div padding */
+.calculadora-input {
+    padding: 10%;
+
+}
+
+/* Nos inputs  */
+.calculadora-input input {
+    width: 40%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 10px;
+    background-color: #DEE3E7;
+
+    -webkit-box-shadow: 5px 7px 17px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 7px 17px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 7px 17px -7px rgba(0, 0, 0, 0.75);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.operacao-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.operacao-container .operacao {
+    background-color: #F1F1F1;
+    padding: 10px 38px;
+    border-radius: .5rem;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s all;
+
+
+}
+
+.operacao:hover {
+    padding: 6px 36px;
+    background-color: #F8981D;
+    color: #12192C;
+    -webkit-box-shadow: 5px 7px 17px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 7px 17px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 7px 17px -7px rgba(0, 0, 0, 0.75);
+}
+
+.operacao:active {
+    background-color: white;
+}
+
+.resultado-container {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #F1F1F1;
+    color: #12192C;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+span.res {
+    background-color: #F8981D;
+    padding: 0 10px;
+}
